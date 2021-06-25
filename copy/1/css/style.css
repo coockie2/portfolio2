@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* ブレイクポイント */
+/* 全般 */
+* {
+  font-family: 'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+body {
+  max-width: 1600px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+}
+
+/* ヘッダー */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 18vw 5px;
+}
+
+.header .left_menu img {
+  width: 120px;
+  height: auto;
+}
+
+.header .right_menu .nav {
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.header .right_menu .nav li {
+  float: left;
+  line-height: 42px;
+  margin-left: 19px;
+}
+
+/* メインヴィジュアル */
+.mv {
+  width: 100%;
+  max-width: 1920px;
+  height: 598px;
+  margin-bottom: 30px;
+}
+
+/* コンテンツ */
+.wrapper {
+  margin: 0 auto;
+  padding-bottom: 106px;
+  max-width: 960px;
+}
+
+.wrapper section {
+  padding: 50px 0 0;
+}
+
+.About h2,
+.Bicycle h2 {
+  margin: 0 auto;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 47px;
+  letter-spacing: -1.2px;
+  border-bottom: 1px solid black;
+}
+
+.About .contents,
+.Bicycle .contents {
+  margin: 44px auto 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*  */
+.About h2 {
+  width: 110px;
+  margin-left: calc((100% / 2) - 5%);
+}
+
+.About .about {
+  width: 530px;
+  margin-left: calc((100% / 2) - 26%);
+}
+
+.About .about .image {
+  width: 100px;
+  height: 100px;
+}
+
+.About .about .image img {
+  border-radius: 50%;
+}
+
+.About .about .details {
+  width: 404px;
+}
+
+.About .about .details .name {
+  padding: 6px 0;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: -0.8px;
+}
+
+.About .about .details .text {
+  padding: 4px 0;
+  letter-spacing: -1.7px;
+  line-height: 21px;
+}
+
+.Bicycle {
+  display: inline-block;
+}
+
+.Bicycle h2 {
+  width: 130px;
+  margin-left: calc((100% / 2) - 6%);
+}
+
+.Bicycle .items {
+  margin: 60px 6.5% 0 8%;
+  clear: both;
+}
+
+.Bicycle .items .item {
+  float: left;
+  width: 31%;
+  margin: 0;
+  padding: 0;
+}
+
+.Bicycle .items .item:not(:nth-child(3n)) {
+  padding-right: 16.2px;
+}
+
+.Bicycle .items .item .image {
+  width: 100%;
+  height: 27vh;
+}
+
+.Bicycle .items .item .details {
+  text-align: center;
+}
+
+.Bicycle .items .item .details .title {
+  padding-top: 9px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+.Bicycle .items .item .details .text {
+  padding: 8px 0;
+  letter-spacing: -1.6px;
+}
+
+@media (max-width: 750px) {
+  .Bicycle .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: -0.1px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 750px) {
+  body {
+    font-size: 30px;
+    letter-spacing: -0.4px;
+  }
+  /* ヘッダー */
+  .header {
+    padding: 10px 3vw;
+    height: auto;
+  }
+  .header .left_menu {
+    width: 34%;
+    height: auto;
+  }
+  .header .left_menu img {
+    width: 100%;
+  }
+  .header .right_menu .nav li {
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    margin-left: 8.4vw;
+  }
+  /* メインヴィジュアル */
+  .mv {
+    height: 133.5vh;
+    margin-bottom: 0;
+  }
+  /* コンテンツ */
+  .wrapper {
+    padding: 30px 0;
+  }
+  .wrapper section {
+    padding: 50px 0 39px;
+  }
+  .wrapper section h2 {
+    height: 46px;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
+  .wrapper section .contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper .about {
+    width: 100%;
+    margin: 0;
+  }
+  .wrapper .About h2 {
+    width: 32vw;
+  }
+  .wrapper .About .contents .image {
+    margin: 60px auto 0;
+    width: 100px;
+    height: 100px;
+  }
+  .wrapper .About .contents .details {
+    margin: 0 auto;
+    padding: 0 16px;
+    width: auto;
+  }
+  .wrapper .About .contents .details .name {
+    padding: 9px 0 0;
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  .wrapper .About .contents .details .text {
+    padding: 10px 0;
+    font-size: 14.4px;
+    line-height: 21px;
+    letter-spacing: 0;
+  }
+  .wrapper .Bicycle h2 {
+    width: 36vw;
+  }
+  .wrapper .Bicycle .items {
+    margin: 60px 0 0;
+    padding: 0 4vw 10px;
+  }
+  .wrapper .Bicycle .items .item {
+    width: 100%;
+  }
+  .wrapper .Bicycle .items .item .image {
+    width: 100%;
+    height: 51.2vh;
+  }
+  .wrapper .Bicycle .items .item .details .title {
+    padding-top: 2vh;
+    font-size: 4.3vw;
+    letter-spacing: 0px;
+  }
+  .wrapper .Bicycle .items .item .details .text {
+    padding: 2.4vh 0 6.5vh;
+    font-size: 3.8vw;
+    line-height: 21px;
+    letter-spacing: 0;
+  }
+  footer {
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 15px;
+  }
+}
+
+.chromeperfectpixel-overlay {
+  width: 1280px !important;
+  height: 1517px  !important;
+}
+/*# sourceMappingURL=style.css.map */

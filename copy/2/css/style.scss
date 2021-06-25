@@ -63,7 +63,7 @@ header {
 
     @include mq(sp) {
         margin: 0 10px;
-        height: 23vh;      
+        height: 38vw;      
     }
 }
 
@@ -93,17 +93,21 @@ header {
             }
         }
     }
+}
 
-    @include mq(sp) {
+@include mq(sp) {
+    .index {
+        margin: 56px auto 57px;
+
         .wrapper {
             width: 78vw;
             margin: 30px auto;
             padding: 13px 0;
-
+    
             h2 {
                 padding-bottom: 9px;
             }
-
+    
             ul {
                 li {
                     padding-bottom: 20px;

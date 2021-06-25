@@ -92,6 +92,9 @@ header h1 {
 }
 
 @media screen and (max-width: 1024px) {
+  .index {
+    margin: 56px auto 57px;
+  }
   .index .wrapper {
     width: 78vw;
     margin: 30px auto;

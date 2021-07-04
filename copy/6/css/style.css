@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* ブレイクポイント */
+/* 全般 */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+*, :after, :before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+:after, :before {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+html {
+  background-color: #F4F9FF;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+}
+
+.mv {
+  width: 90vw;
+  margin: 60px auto 0;
+}
+
+
+header {
+  width: 90vw;
+  margin: 28px auto 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-title {
+  width: 110px;
+  line-height: 1px;
+  margin-right: 50px;
+}
+
+.sub-title a {
+  display: block;
+}
+
+.sub-title a img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+header .nav li {
+  float: left;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+header .nav li:not(:first-child) {
+  padding-left: 31px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.container main section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container main .concept {
+  margin-top: 65px;
+}
+
+.container main .work {
+  margin: 56px 0;
+}
+
+.container main .concept .img,
+.container main .work .img {
+  width: 50%;
+}
+
+.container main .concept .details,
+.container main .work .details {
+  width: 50%;
+  padding-right: 6%;
+}
+
+.container main .concept .details {
+  padding-left: 7%;
+}
+
+.container main .work .details {
+  padding-left: 62px;
+}
+
+.container main .concept .details {
+  padding-left: 7%;
+}
+
+.container main .concept .details h2,
+.container main .work .details h2 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+
+.container main .concept .details p,
+.container main .work .details p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.container main .concept .details div,
+.container main .work .details div {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+footer {
+  width: 69vw;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .title {
+  width: 110px;
+  display: block;
+}
+
+footer .title img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer .copyright {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+}
+
+@media screen and (max-width: 767px) {
+  .mv {
+    width: 100%;
+    height: 39vh;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 91vw;
+    margin: 23px auto 0;
+  }
+
+  header .sub-title {
+    margin-right: 27px;
+  }
+
+  header .nav {
+    width: 60%;
+  }
+
+  header .nav li:not(:first-child) {
+    padding-left: 16%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container main .concept,
+  .container main .work {
+    flex-direction: column;
+    margin-top: 56px;
+  }
+
+  .container main .concept .img,
+  .container main .concept .details,
+  .container main .work .img,
+  .container main .work .details {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container main .concept .img,
+  .container main .work .img {
+    order: 0;
+  }
+
+  .container main .concept .details,
+  .container main .work .details {
+    order: 1;
+  }
+
+  .container main .concept .details h2,
+  .container main .work .details h2 {
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 4px;
+  }
+
+  .container main .concept .details h2 {
+    line-height: 33px;
+  }
+
+  .container main .work .details h2 {
+    line-height: 39px;
+    margin-bottom: 0px
+  }
+
+  footer {
+    width: 91vw;
+  }
+
+  footer .copyright {
+    width: 172px;
+    font-size: 14.5px;
+  }
+}
+
+
+.chromeperfectpixel-overlay {
+  width: 375px !important;
+  height: 1680px  !important;
+}
+/*# sourceMappingURL=style.css.map */

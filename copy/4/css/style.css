@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* ブレイクポイント */
+/* 全般 */
+* {
+  font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+body {
+  min-width: 1200px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+}
+
+.mv {
+  height: 100vh;
+  background-image: url(../image/mainvisual.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.description {
+  margin: 75px auto 80px;
+  text-align: center;
+}
+
+.description h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.description div {
+  margin: 13px auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.thumbnail .img-items {
+  display: flex;
+}
+
+.thumbnail .img-items .item,
+.thumbnail .img-items .item img {
+  height: 500px;
+}
+
+.thumbnail a {
+  margin: 60px auto;
+  padding: 3px 0 4px;
+  width: 230px;
+  display: block;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.thumbnail .sns {
+  width: 186px;
+  padding: 17px 0;
+  margin: 0 auto;
+}
+
+.thumbnail .sns .items {
+  display: flex;
+}
+
+.thumbnail .sns .items .item {
+  font-size: 12px;
+  line-height: 21px;
+}
+
+.thumbnail .sns .items .item:not(:first-of-type) {
+  padding-left: 21px;
+}
+
+footer {
+  width: 111px;
+  margin: 0 auto;
+  margin-top: -3px;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+@media screen and (max-width: 834px) {
+  
+  body {
+    min-width: 0;
+  }
+
+  .description div {
+    margin: 13px 27px;
+  }
+
+  .thumbnail .img-items {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .thumbnail a {
+    margin: 61px auto;
+  }
+  
+}
+
+.chromeperfectpixel-overlay {
+  width: 1200px !important;
+  height: 1654px  !important;
+/*
+  width: 375px !important;
+  height: 2678px  !important;
+*/
+}

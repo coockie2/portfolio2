@@ -1,0 +1,154 @@
+@charset "UTF-8";
+* {
+  font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: auto;
+}
+
+.main {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.main .image {
+  width: 50%;
+  height: 700px;
+}
+
+.main .recipe {
+  width: 40%;
+  padding: 40px 5% 0 5%;
+}
+
+.main .recipe h2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.main .recipe p {
+  margin: 17px auto;
+}
+
+.main .recipe h3 {
+  padding: 25px 0 8px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  border-bottom: 1px #CCCCCC solid;
+}
+
+.main .recipe table {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 14px;
+}
+
+.main .recipe table tr {
+  height: 36px;
+}
+
+.main .recipe table tr td {
+  border: none;
+  border-bottom: 1px #CCCCCC solid;
+}
+
+.main .recipe table tr td:last-child {
+  text-align: right;
+}
+
+.main .recipe ul {
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.main .recipe ul li {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 0 8px;
+  height: 21px;
+  border-bottom: 1px #CCCCCC solid;
+}
+
+main a {
+  margin: 60px auto;
+  padding: 3px 0 4px;
+  width: 230px;
+  display: block;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+main .sns {
+  width: 186px;
+  padding: 17px 0;
+  margin: 0 auto;
+}
+
+main .sns .items {
+  display: flex;
+  list-style: none;
+}
+
+main .sns .items .item {
+  font-size: 12px;
+  line-height: 21px;
+}
+
+main .sns .items .item:not(:first-of-type) {
+  padding-left: 21px;
+}
+
+footer {
+  width: 111px;
+  margin: 0 auto;
+  margin-top: -3px;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+@media screen and (max-width: 834px) {
+
+  .main {
+    flex-direction: column;
+  }
+
+  .main .image {
+    width: 100%;
+    height: 465px;
+  }
+
+  .main .recipe {
+    width: 90%;
+  }
+  
+}
+
+.chromeperfectpixel-overlay {
+  width: 375px !important;
+  height: 1491px  !important;
+  /*
+  width: 1200px !important;
+  height: 966px  !important;
+  */
+}

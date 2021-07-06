@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/* ブレイクポイント */
+/* 全般 */
+* {
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: auto;
+  height: 100%;
+}
+
+.mv {
+  width: 100%;
+  height: 600px;
+}
+
+.mv img.logo {
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 13px;
+}
+
+.wrapper .magazine {
+  max-width: 1200px;
+  margin: 82px auto 0;
+}
+
+.wrapper .magazine h2 {
+  max-width: 573px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.wrapper .magazine p {
+  max-width: 560px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  margin: 16px auto 0;
+}
+
+.wrapper .magazine .images {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 7%;
+}
+
+.wrapper .magazine .images .archive,
+.wrapper .magazine .images .new {
+  width: 49%;
+  position: relative;
+}
+
+.wrapper .magazine .images .archive img,
+.wrapper .magazine .images .new img {
+  height: auto;
+}
+
+.wrapper .magazine .images .archive .details,
+.wrapper .magazine .images .new .details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 290px;
+  height: 97px;
+  margin: 0 auto;
+  padding: 10px 25px;
+  color: white;
+  background-color: #707070;
+}
+
+.wrapper .magazine .images .archive .details h3,
+.wrapper .magazine .images .new .details h3 {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.wrapper .magazine .images .archive .details p,
+.wrapper .magazine .images .new .details p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+
+.wrapper .fashion-style {
+  background-color: #F8F8F8;
+  margin-top: 75px;
+  height: 525px;
+}
+
+.wrapper .fashion-style .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper .fashion-style .wrapper h2 {
+  padding-top: 65px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1px;
+}
+
+.wrapper .fashion-style .wrapper p {
+  width: 560px;
+  margin: 18px auto 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.wrapper .fashion-style .wrapper .btn {
+  margin: 30px auto 0;
+}
+
+.wrapper .fashion-style .wrapper .btn a {
+  font-size: 12px;
+  line-height: 40px;
+  width: 133px;
+  height: 44px;
+  border: 1px #24292E solid;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper .catalog-antique {
+  background-color: #F8F8F8;
+  margin-top: 80px;
+}
+
+.wrapper .catalog-antique .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper .catalog-antique .wrapper .catalog,
+.wrapper .catalog-antique .wrapper .antique {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 59px 5%;
+}
+
+.wrapper .catalog-antique .wrapper .catalog img,
+.wrapper .catalog-antique .wrapper .antique img {
+  width: 48%;
+}
+.wrapper .catalog-antique .wrapper .catalog .details,
+.wrapper .catalog-antique .wrapper .antique .details {
+  width: 49%;
+}
+
+.wrapper .catalog-antique .wrapper .catalog .details h2,
+.wrapper .catalog-antique .wrapper .antique .details h2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.wrapper .catalog-antique .wrapper .catalog .details .message1,
+.wrapper .catalog-antique .wrapper .catalog .details .message2,
+.wrapper .catalog-antique .wrapper .catalog .details .message3,
+.wrapper .catalog-antique .wrapper .antique .details .message1,
+.wrapper .catalog-antique .wrapper .antique .details .message2,
+.wrapper .catalog-antique .wrapper .antique .details .message3 {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -1px;
+}
+
+.wrapper .catalog-antique .wrapper .catalog .details .message1,
+.wrapper .catalog-antique .wrapper .catalog .details .message2,
+.wrapper .catalog-antique .wrapper .catalog .details .message3,
+.wrapper .catalog-antique .wrapper .antique .details .message1,
+.wrapper .catalog-antique .wrapper .antique .details .message2,
+.wrapper .catalog-antique .wrapper .antique .details .message3 {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.wrapper .catalog-antique .wrapper .antique .details .btn {
+  margin: 56px auto 0;
+}
+
+.wrapper .catalog-antique .wrapper .antique .details .btn a {
+  font-size: 12px;
+  line-height: 40px;
+  width: 133px;
+  height: 44px;
+  border: 1px #24292E solid;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-menu {
+  height: 368px;
+  background-color: #333333;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+
+.footer-menu .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 103px 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer-menu .wrapper .logo {
+  width: 30%;
+}
+.footer-menu .wrapper .menu1,
+.footer-menu .wrapper .menu2 {
+  width: 33%;
+}
+
+.footer-menu .wrapper .logo {
+  padding-top: 58px;
+}
+
+.footer-menu .wrapper .logo img {
+  width: 120px;
+  height: 40px;
+}
+
+.footer-menu .wrapper .menu1 h2,
+.footer-menu .wrapper .menu2 h2 {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-menu .wrapper .menu1 ul,
+.footer-menu .wrapper .menu2 p {
+  font-size: 12px;
+  line-height: 24px;
+  list-style: none;
+  padding-top: 8px;
+}
+
+.footer-menu .wrapper .menu1 ul li::before {
+  content: "-";
+  margin-right: 5px;
+}
+
+.footer-menu .wrapper .menu1 ul li a {
+  color: white;
+}
+
+footer {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 30px 0 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .mv img.logo {
+    right: 30px;
+  }
+
+  .wrapper .magazine p {
+    padding: 0 5%;
+  }
+
+  .wrapper .magazine .images {
+    flex-direction: column;
+    margin-top: 63px;
+    padding: 0 5%;
+  }
+
+  .wrapper .magazine .images .archive,
+  .wrapper .magazine .images .new {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+
+  .wrapper .fashion-style {
+    margin-top: 50px;
+  }
+
+  .wrapper .fashion-style .wrapper h2 {
+    padding-top: 35px;
+  }
+
+  .wrapper .fashion-style .wrapper p {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .wrapper .catalog-antique {
+    margin-top: 46px;
+  }
+
+  .wrapper .catalog-antique .wrapper .catalog,
+  .wrapper .catalog-antique .wrapper .antique {
+    flex-direction: column;
+    padding: 30px 5%;
+  }
+
+  .wrapper .catalog-antique .wrapper .catalog img,
+  .wrapper .catalog-antique .wrapper .antique img {
+    width: 100%;
+    order: 1;
+  }
+
+  .wrapper .catalog-antique .wrapper .catalog .details,
+  .wrapper .catalog-antique .wrapper .antique .details {
+    width: 100%;
+    order: 2;
+    padding-top: 60px;
+  }
+
+  .footer-menu {
+    height: 456px;
+  }
+
+  .footer-menu .wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .footer-menu .wrapper .logo {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .footer-menu .wrapper .menu1,
+  .footer-menu .wrapper .menu2 {
+    width: 100%;
+    padding: 28px 5% 0;
+  }
+}
+
+.chromeperfectpixel-overlay {
+  width: 375px !important;
+  height: 4533px  !important;
+}

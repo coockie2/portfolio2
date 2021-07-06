@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/* ブレイクポイント */
+/* 全般 */
+* {
+  font-family: 'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+}
+
+/***********************************
+ * header
+ ***********************************/
+header {
+  max-width: 960px;
+  margin: 114px auto 106px;
+  padding: 0 4%;
+}
+
+header .wrapper {
+  margin-left: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .wrapper h1 {
+  width: 120px;  
+  height: auto;
+}
+
+header .wrapper .nav li {
+  float: left;
+  font-size: 14.4px;
+  line-height: 21px;
+}
+
+header .wrapper .nav li:not(:last-child) {
+  padding-right: 29px;
+}
+header .wrapper .nav li:last-child {
+  padding-right: 20.7px;
+}
+
+header .wrapper .nav li img {
+  width: 20px;
+  height: 20px;
+}
+
+/***********************************
+ * mv
+ ***********************************/
+.mv {
+  width: 100%;
+  height: 420px;
+}
+
+/***********************************
+ * main
+ ***********************************/
+
+.container section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.container section h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/***********************************
+ * about
+ ***********************************/
+.container .about {
+  margin: 80px auto 130px;
+}
+
+.container .about h2 {
+  margin-left: -23px;
+}
+
+.container .about .address,
+.container .about .profile {
+  font-size: 14.4px;
+  line-height: 21px;
+}
+
+.container .about .name {
+  margin: 63px 8px 0;
+  letter-spacing: -0.8px;
+}
+
+.container .about .address {
+  margin: 28px 8px 0;
+}
+
+.container .about .profile {
+  margin: 30px 8px 0;
+}
+
+/***********************************
+ * works
+ ***********************************/
+.container .works {
+  margin: 0 auto 106px;
+}
+
+.container .works .thumbnail {
+  margin: 64px 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container .works .thumbnail img {
+  width: 31.5%;
+  padding-bottom: 24px;
+}
+
+/***********************************
+ * news
+ ***********************************/
+.container .news {
+  margin: 0 auto 128px;
+}
+
+.container .news .details {
+  margin-top: 65px;
+}
+
+.container .news .details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container .news .details table tr {
+  height: 49px;
+  border-bottom: 1px #C8C8C8 solid;
+}
+
+.container .news .details table tr:first-child {
+  border-top: 1px #C8C8C8 solid;
+}
+
+.container .news .details table tr th,
+.container .news .details table tr td {
+  font-size: 14.4px;
+  line-height: 21px;
+}
+
+.container .news .details table tr th {
+  padding-left: 14px;
+  letter-spacing: -0.5px;
+}
+
+.container .news .details table tr td {
+  padding-left: 75px;
+}
+
+/***********************************
+ * contact
+ ***********************************/
+.container .contact form {
+  margin: 62px auto;
+  text-align: left;
+}
+
+.container .contact form div {
+  padding-bottom: 10px;
+}
+
+.container .contact form table {
+  width: 100%;
+}
+
+.container .contact form table tr:not(:last-child) {
+  height: 52px;
+}
+
+.container .contact form table tr:last-child {
+  height: 175px;
+}
+
+.container .contact form table tr th {
+  width: 122px;
+  vertical-align: top;
+}
+
+.container .contact form table tr td {
+  vertical-align: top;
+}
+
+.container .contact form label {
+  font-size: 14.4px;
+  line-height: 21px;
+  width: 112px;
+  vertical-align: top;
+}
+
+.container .contact form input {
+  width: 99%;
+  height: 43px;
+  border: 1px #C8C8C8 solid;
+}
+
+.container .contact form textarea {
+  width: 99%;
+  height: 158px;
+  resize: none;
+  border: 1px #C8C8C8 solid;
+}
+
+.container .contact form .submit {
+  text-align: center;
+  margin-top: 13px;
+}
+
+.container .contact form .submit input {
+  height: 53px;
+  width: 200px;
+  color: white;
+  font-size: 14.4px;
+  line-height: 21px;
+  background-color: #24292E;
+  border-color: #24292E;
+}
+
+/***********************************
+ * footer
+ ***********************************/
+ footer {
+   margin-top: 120px;
+   background-color: #24292E;
+ }
+
+footer .copyright {
+  height: 35px;
+  font-size: 10px;
+  line-height: 36px;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 599px) {
+  header {
+    margin: 19px auto 10px;
+  }
+
+  header .wrapper {
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  header .wrapper h1 {
+    font-size: 31.8px;
+    line-height: 37px;
+  }
+
+  header .wrapper ul {
+    font-size: 12.8px;
+    line-height: 20px;
+    padding-top: 2px;
+  }
+
+  header .wrapper .nav li:not(:last-child) {
+    padding-right: 15px;
+  }
+
+  header .wrapper .nav li:last-child {
+    padding-right: 20px;
+  }
+
+  .container .about {
+    margin-bottom: 70px;
+  }
+
+  .container .about h2 {
+    margin-left: 0;
+  }
+
+  .container .about .name {
+    margin: 39px -1px 0;
+  }
+
+  .container .about .address,
+  .container .about .profile {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container .works {
+    margin: 0 auto 42px;
+  }
+
+  .container .works .thumbnail {
+    flex-direction: column;
+    justify-content: normal;
+    margin: 40px 0 0;
+  }
+
+  .container .works .thumbnail img {
+    width: 100%;
+  }
+
+  .container .news {
+    margin: 0 auto 68px;
+  }
+
+  .container .news .details {
+    margin-top: 40px;
+  }
+
+  .container .news .details table tr th {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 15px 13px 0;
+  }
+
+  .container .news .details table tr td {
+    display: block;
+    width: 100%;
+    padding: 0 15px 14px;
+  }
+
+  .container .contact form {
+    margin: 35px auto;
+  }
+
+  .container .contact form table tr:not(:last-child) {
+    height: 72px;
+  }
+
+  .container .contact form table tr th,
+  .container .contact form table tr td {
+    display: block;
+  }
+
+  .container .contact form label {
+    vertical-align: bottom;
+  }
+
+  .container .contact form .submit {
+    margin-top: 24px;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+}
+
+.chromeperfectpixel-overlay {
+  width: 375px !important;
+  height: 3875px  !important;
+}
